@@ -1,0 +1,136 @@
+body {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+}
+body.dark-mode {
+    background-color: #121212;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007bff;
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.container.dark-mode {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    /* color: white; */
+}
+
+
+.table th, .table td {
+    vertical-align: middle;
+    
+}
+.table.dark-mode th, 
+.table.dark-mode td {
+    background-color: #1a1a1a;
+    color: black;
+    border-color: #333333; 
+}
+
+a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+a.dark-mode {
+    color: #1f6feb;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+a.dark-mode:hover {
+    color: #1f6feb;
+}
+
+
+.add-user-btn {
+    margin: 9px 15px;
+    float: right;
+}
+.bg-warning-subtle {
+    background-color: #fff3cd; /* Subtle yellow background */
+    padding: 10px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+.bg-warning-subtle h4 {
+    font-family: 'Lexend';
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+}
+.card.dark-mode {
+    border: 1px solid #1f6feb;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 7px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 700; /* Bold for card header */
+}
+.card-header.dark-mode {
+    background-color: #1f6feb;
+    color: white;
+}
+
+.card-header h5{
+    font-size: 20px;
+}
+.card-body {
+    padding: 15px;
+}
+
+.dark-mode-toggle button {
+    background-color: #121212;
+    color: white;
+    position: relative;
+   margin-bottom: 7px;
+   left: 960px;
+   z-index: 1000;
+   
+}
+.dark-mode-toggle button:hover {
+    background-color: #121212; /* Keep the background the same */
+    color: white; /* Keep the text color the same */
+    cursor: default; /* Disable the pointer cursor */
+}
+
+/* Additional adjustments for dark mode */
+.dark-mode .add-user-btn {
+    /* background-color: #bb86fc; */
+    /* border-color: #bb86fc; */
+    color: #fff;
+}
+
+.dark-mode .bg-warning-subtle {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .card {
+        margin: 10px 0;
+    }
+}
