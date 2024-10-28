@@ -1,0 +1,156 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #f0f4f8; /* Light background color for body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.iphone-mockup {
+    position: relative;
+    width: 400px; /* iPhone 16 Pro Max width */
+    height: 800px; /* iPhone 16 Pro Max height */
+    border-radius: 45px; /* Rounded corners for the iPhone */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #000; /* iPhone color */
+    overflow: hidden;
+}
+
+.dynamic-island {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 44px; /* Height of the dynamic island */
+    background-color: #f0f4f8; /* Slightly darker to stand out */
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+}
+
+.status-icon {
+    font-size: 18px; /* Icons size in the status bar */
+    margin-left: 10px; /* Space between icons */
+}
+
+.screen {
+    position: absolute;
+    top: 44px; /* Adjusted to accommodate the dynamic island */
+    left: 0;
+    right: 0;
+    bottom: 60px; /* Space for bottom buttons */
+    padding: 20px; /* Padding for content inside */
+    background-color: #ffffff; /* White background for the screen */
+    border-radius: 40px; /* Match the iPhone corners */
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height for container */
+}
+
+h1 {
+    color: #333;
+    font-size: 24px; /* Font size for mobile */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width inside the container */
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    background-color: #f9fafb;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.bottom-buttons {
+    position: absolute;
+    bottom: 10px; /* Positioning buttons at the bottom */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around; /* Space between buttons */
+}
+
+.success-message {
+    background-color: #34d399;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.back-button, .help-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #d1d5db;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover, .help-button:hover {
+    background-color: #d1d5db;
+}
