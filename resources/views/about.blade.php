@@ -155,6 +155,30 @@
         .css { width: 70%; background-color: #2ecc71; }
         .javascript { width: 60%; background-color: #f1c40f; }
 
+<<<<<<< HEAD
+=======
+        /* Notification styling */
+        .notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .notification.show {
+            display: block;
+            opacity: 1;
+        }
+
+>>>>>>> c04ecdf (Design Updates)
     </style>
 </head>
 <body>
@@ -170,7 +194,13 @@
     <p class="job-title">Software Developer | Laravel & Magento Enthusiast</p>
     <p>Location: Anytown, India</p>
     <div class="action-buttons">
+<<<<<<< HEAD
         <button>Connect</button>
+=======
+            <a href="javascript:void(0);" onclick="copyEmail()">
+                <button>Connect</button>
+            </a>
+>>>>>>> c04ecdf (Design Updates)
         <button>Message</button>
     </div>
 </div>
@@ -241,5 +271,25 @@
     <p>Coding, Blogging, Open Source Contribution, AI & Machine Learning, Web Development</p>
 </div>
 
+<<<<<<< HEAD
+=======
+<!-- Notification Pop-up -->
+<div class="notification" id="notification">
+    Email copied to clipboard!
+</div>
+
+<script>
+    function copyEmail() {  
+            const email = "priyanshu@example.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const notification = document.getElementById('notification');
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
+            });
+        }
+</script>
+>>>>>>> c04ecdf (Design Updates)
 </body>
 </html>

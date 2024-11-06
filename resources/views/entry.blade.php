@@ -212,7 +212,11 @@
         <i class="fas fa-user-circle"></i>
         <span>About</span>
         <div class="about-dropdown" id="about-dropdown">
+<<<<<<< HEAD
             <p>Hello, myself <strong>Priyanshu Dave</strong>, hope you all are vibing!</p>
+=======
+            <p>Hello, myself <a href="{{ route('persoanl.about') }}"><strong>Priyanshu Dave</strong></a>, hope you all are vibing!</p>
+>>>>>>> c04ecdf (Design Updates)
             <ul class="social-links">
                 <li>
                     <a href="https://instagram.com/yourusername" target="_blank">
@@ -303,5 +307,9 @@
         }, 2000);
     }
     </script>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> c04ecdf (Design Updates)
 </body>
 </html>
